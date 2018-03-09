@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96B2E163A5E626ECB44F3812 /* Pods_Beauty_Spot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D4749214C649B63642B750 /* Pods_Beauty_Spot.framework */; };
 		DE62667F2052A95F005294A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62667E2052A95F005294A0 /* AppDelegate.swift */; };
 		DE6266842052A95F005294A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6266822052A95F005294A0 /* Main.storyboard */; };
 		DE6266862052A95F005294A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6266852052A95F005294A0 /* Assets.xcassets */; };
@@ -16,9 +17,12 @@
 		DE6266972052AA92005294A0 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266922052AA91005294A0 /* NewPostViewController.swift */; };
 		DE6266982052AA92005294A0 /* NewsfeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266932052AA92005294A0 /* NewsfeedTableViewController.swift */; };
 		DE6266992052AA92005294A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266942052AA92005294A0 /* Post.swift */; };
+		DE6266A12052B08A005294A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6266A02052B08A005294A0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		807074287B5719F2658AE966 /* Pods-Beauty Spot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty Spot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty Spot/Pods-Beauty Spot.release.xcconfig"; sourceTree = "<group>"; };
+		8C13FD054EF3C46B452253D1 /* Pods-Beauty Spot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty Spot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty Spot/Pods-Beauty Spot.debug.xcconfig"; sourceTree = "<group>"; };
 		DE62667B2052A95F005294A0 /* Beauty Spot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty Spot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE62667E2052A95F005294A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE6266832052A95F005294A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		DE6266922052AA91005294A0 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		DE6266932052AA92005294A0 /* NewsfeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedTableViewController.swift; sourceTree = "<group>"; };
 		DE6266942052AA92005294A0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DE6266A02052B08A005294A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5D4749214C649B63642B750 /* Pods_Beauty_Spot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_Spot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B2E163A5E626ECB44F3812 /* Pods_Beauty_Spot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13BD54695231429B35024F35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C13FD054EF3C46B452253D1 /* Pods-Beauty Spot.debug.xcconfig */,
+				807074287B5719F2658AE966 /* Pods-Beauty Spot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE6266722052A95F005294A0 = {
 			isa = PBXGroup;
 			children = (
 				DE62667D2052A95F005294A0 /* Beauty Spot */,
 				DE62667C2052A95F005294A0 /* Products */,
+				13BD54695231429B35024F35 /* Pods */,
+				E02FD2117A0358A8DE1B84C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +88,7 @@
 				DE6266852052A95F005294A0 /* Assets.xcassets */,
 				DE6266872052A95F005294A0 /* LaunchScreen.storyboard */,
 				DE62668A2052A95F005294A0 /* Info.plist */,
+				DE6266A02052B08A005294A0 /* GoogleService-Info.plist */,
 			);
 			path = "Beauty Spot";
 			sourceTree = "<group>";
@@ -100,6 +119,14 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		E02FD2117A0358A8DE1B84C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4749214C649B63642B750 /* Pods_Beauty_Spot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE62668D2052A95F005294A0 /* Build configuration list for PBXNativeTarget "Beauty Spot" */;
 			buildPhases = (
+				B569B3537357CDC53B9A2184 /* [CP] Check Pods Manifest.lock */,
 				DE6266772052A95F005294A0 /* Sources */,
 				DE6266782052A95F005294A0 /* Frameworks */,
 				DE6266792052A95F005294A0 /* Resources */,
+				33FC58B4BE305A0EFEA31DED /* [CP] Embed Pods Frameworks */,
+				11A1F0E9926732116BE36250 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,12 +190,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6266892052A95F005294A0 /* LaunchScreen.storyboard in Resources */,
+				DE6266A12052B08A005294A0 /* GoogleService-Info.plist in Resources */,
 				DE6266862052A95F005294A0 /* Assets.xcassets in Resources */,
 				DE6266842052A95F005294A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A1F0E9926732116BE36250 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beauty Spot/Pods-Beauty Spot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33FC58B4BE305A0EFEA31DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beauty Spot/Pods-Beauty Spot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beauty Spot/Pods-Beauty Spot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B569B3537357CDC53B9A2184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beauty Spot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE6266772052A95F005294A0 /* Sources */ = {
@@ -312,6 +405,7 @@
 		};
 		DE62668E2052A95F005294A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C13FD054EF3C46B452253D1 /* Pods-Beauty Spot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +421,7 @@
 		};
 		DE62668F2052A95F005294A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807074287B5719F2658AE966 /* Pods-Beauty Spot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
