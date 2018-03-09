@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DE62667F2052A95F005294A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62667E2052A95F005294A0 /* AppDelegate.swift */; };
-		DE6266812052A95F005294A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266802052A95F005294A0 /* ViewController.swift */; };
 		DE6266842052A95F005294A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6266822052A95F005294A0 /* Main.storyboard */; };
 		DE6266862052A95F005294A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6266852052A95F005294A0 /* Assets.xcassets */; };
 		DE6266892052A95F005294A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6266872052A95F005294A0 /* LaunchScreen.storyboard */; };
+		DE6266952052AA92005294A0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266902052AA91005294A0 /* PhotoTableViewCell.swift */; };
+		DE6266962052AA92005294A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266912052AA91005294A0 /* LoginViewController.swift */; };
+		DE6266972052AA92005294A0 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266922052AA91005294A0 /* NewPostViewController.swift */; };
+		DE6266982052AA92005294A0 /* NewsfeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266932052AA92005294A0 /* NewsfeedTableViewController.swift */; };
+		DE6266992052AA92005294A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6266942052AA92005294A0 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE62667B2052A95F005294A0 /* Beauty Spot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty Spot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE62667E2052A95F005294A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE6266802052A95F005294A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE6266832052A95F005294A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE6266852052A95F005294A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6266882052A95F005294A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE62668A2052A95F005294A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6266902052AA91005294A0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		DE6266912052AA91005294A0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE6266922052AA91005294A0 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		DE6266932052AA92005294A0 /* NewsfeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedTableViewController.swift; sourceTree = "<group>"; };
+		DE6266942052AA92005294A0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		DE62667D2052A95F005294A0 /* Beauty Spot */ = {
 			isa = PBXGroup;
 			children = (
+				DE62669F2052AE69005294A0 /* controller */,
+				DE62669E2052AE63005294A0 /* view */,
+				DE62669D2052AE5D005294A0 /* model */,
 				DE62667E2052A95F005294A0 /* AppDelegate.swift */,
-				DE6266802052A95F005294A0 /* ViewController.swift */,
 				DE6266822052A95F005294A0 /* Main.storyboard */,
 				DE6266852052A95F005294A0 /* Assets.xcassets */,
 				DE6266872052A95F005294A0 /* LaunchScreen.storyboard */,
 				DE62668A2052A95F005294A0 /* Info.plist */,
 			);
 			path = "Beauty Spot";
+			sourceTree = "<group>";
+		};
+		DE62669D2052AE5D005294A0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6266942052AA92005294A0 /* Post.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DE62669E2052AE63005294A0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DE6266902052AA91005294A0 /* PhotoTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DE62669F2052AE69005294A0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE6266912052AA91005294A0 /* LoginViewController.swift */,
+				DE6266922052AA91005294A0 /* NewPostViewController.swift */,
+				DE6266932052AA92005294A0 /* NewsfeedTableViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6266812052A95F005294A0 /* ViewController.swift in Sources */,
+				DE6266982052AA92005294A0 /* NewsfeedTableViewController.swift in Sources */,
+				DE6266962052AA92005294A0 /* LoginViewController.swift in Sources */,
 				DE62667F2052A95F005294A0 /* AppDelegate.swift in Sources */,
+				DE6266952052AA92005294A0 /* PhotoTableViewCell.swift in Sources */,
+				DE6266992052AA92005294A0 /* Post.swift in Sources */,
+				DE6266972052AA92005294A0 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
